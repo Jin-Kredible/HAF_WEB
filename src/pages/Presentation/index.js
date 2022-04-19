@@ -92,7 +92,7 @@ function Presentation() {
               px={{ xs: 6, lg: 12 }}
               mt={1}
             >
-              HAF 프로젝트 웹사이트입니다.
+              HAF 프로젝트 웹사이트
             </MKTypography>
           </Grid>
         </Container>
