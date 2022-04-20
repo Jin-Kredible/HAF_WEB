@@ -551,7 +551,8 @@ function DefaultNavbar({ brand, routes, transparent, light, action, sticky, rela
 
 // Setting default values for the props of DefaultNavbar
 DefaultNavbar.defaultProps = {
-  brand: "Material Kit 2",
+  brand: "HAF Platform ",
+  routes: false,
   transparent: false,
   light: false,
   action: false,
@@ -563,14 +564,14 @@ DefaultNavbar.defaultProps = {
 // Typechecking props for the DefaultNavbar
 DefaultNavbar.propTypes = {
   brand: PropTypes.string,
-  routes: PropTypes.arrayOf(PropTypes.object).isRequired,
+  routes: PropTypes.arrayOf(PropTypes.object),
   transparent: PropTypes.bool,
   light: PropTypes.bool,
   action: PropTypes.oneOfType([
     PropTypes.bool,
     PropTypes.shape({
-      type: PropTypes.oneOf(["external", "internal"]).isRequired,
-      route: PropTypes.string.isRequired,
+      type: PropTypes.oneOf(["external", "internal"]),
+      route: PropTypes.string,
       color: PropTypes.oneOf([
         "primary",
         "secondary",
@@ -583,7 +584,7 @@ DefaultNavbar.propTypes = {
         "default",
         "white",
       ]),
-      label: PropTypes.string.isRequired,
+      label: PropTypes.string,
     }),
   ]),
   sticky: PropTypes.bool,

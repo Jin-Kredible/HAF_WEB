@@ -39,9 +39,6 @@ Coded by www.creative-tim.com
 // @mui material components
 import Icon from "@mui/material/Icon";
 
-// @mui icons
-import GitHubIcon from "@mui/icons-material/GitHub";
-
 // Pages
 import AboutUs from "layouts/pages/landing-pages/about-us";
 import ContactUs from "layouts/pages/landing-pages/contact-us";
@@ -70,7 +67,7 @@ import Typography from "layouts/sections/elements/typography";
 
 const routes = [
   {
-    name: "pages",
+    name: "소개",
     icon: <Icon>dashboard</Icon>,
     columns: 1,
     rowsPerColumn: 2,
@@ -108,7 +105,7 @@ const routes = [
     ],
   },
   {
-    name: "sections",
+    name: "기능",
     icon: <Icon>view_day</Icon>,
     collapse: [
       {
@@ -239,7 +236,7 @@ const routes = [
     ],
   },
   {
-    name: "docs",
+    name: "설정",
     icon: <Icon>article</Icon>,
     collapse: [
       {
@@ -263,11 +260,6 @@ const routes = [
         href: "https://www.creative-tim.com/learning-lab/react/datepicker/material-kit/",
       },
     ],
-  },
-  {
-    name: "github",
-    icon: <GitHubIcon />,
-    href: "https://www.github.com/creativetimofficial/material-kit-react",
   },
 ];
 
