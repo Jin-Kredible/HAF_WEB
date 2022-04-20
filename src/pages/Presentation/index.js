@@ -83,7 +83,7 @@ function Presentation() {
                 },
               })}
             >
-              Material Kit 2 React{" "}
+              HAF 소개 페이지{" "}
             </MKTypography>
             <MKTypography
               variant="body1"
@@ -92,7 +92,7 @@ function Presentation() {
               px={{ xs: 6, lg: 12 }}
               mt={1}
             >
-              HAF 프로젝트 웹사이트
+              HAF 프로젝트 웹사이트입니다. Firebase 연동 테스트중
             </MKTypography>
           </Grid>
         </Container>
